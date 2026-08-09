@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YT Downloader API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 0 20px;
+            color: #333;
+            line-height: 1.6;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 6px;
+            overflow-x: auto;
+        }
+        .endpoint {
+            margin-bottom: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>YouTube Downloader API</h1>
+    <p>Welcome! This backend is hosted on Netlify and acts as a serverless API.</p>
+    
+    <h2>Available Endpoints:</h2>
+    
+    <div class="endpoint">
+        <h3>1. Check Status</h3>
+        <p><code>GET /api/</code></p>
+        <p>Returns server uptime and ping info.</p>
+    </div>
+
+    <div class="endpoint">
+        <h3>2. Get Video Info</h3>
+        <p><code>GET /api/info?url=YOUR_YOUTUBE_URL</code></p>
+        <p>Returns JSON containing the video title and thumbnail.</p>
+    </div>
+
+    <div class="endpoint">
+        <h3>3. Download MP4 Video</h3>
+        <p><code>GET /api/mp4?url=YOUR_YOUTUBE_URL</code></p>
+        <p>Streams and downloads the video file directly.</p>
+    </div>
+
+    <hr>
+    <p><small>Running on Netlify Serverless Functions.</small></p>
+</body>
+</html>
